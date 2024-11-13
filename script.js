@@ -2,14 +2,6 @@ let buttons=document.getElementsByTagName('button');
 let result=document.getElementById('result');
 console.log(result)
 console.log(buttons)
-for(i=0;i<buttons.length;i++)
-{
-    buttons[i].onclick=function()
-    {
-        let input=this.innerText;
-        updateDisplay(input)
-    }
-}
 function updateDisplay(input)
 {
     let currentdisplay=result.innerText;
